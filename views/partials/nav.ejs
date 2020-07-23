@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <% if(pagename==="Home") {%>
+                        <a class="nav-link" style="color:greenyellow" href="/">Home</a>
+                    <%}else{%>
+                        <a class="nav-link" href="/">Home</a>
+                    <%}%>
+                </li>
+                <li class="nav-item">
+                    <% if(pagename==="About") {%>
+                        <a class="nav-link" style="color:greenyellow" href="/about">About</a>
+                    <%}else{%>
+                        <a class="nav-link" href="/about">About</a>
+                    <%}%>
+                </li>
+                <li class="nav-item">
+                    <% if(pagename==="Register") {%>
+                        <a class="nav-link" style="color:greenyellow" href="/register">Register</a>
+                    <%}else{%>
+                        <a class="nav-link" href="/register">Register</a>
+                    <%}%>
+                </li>
+                <li class="nav-item">
+                    <% if(pagename==="Login") {%>
+                        <a class="nav-link" style="color:greenyellow" href="/login">Login</a>
+                    <%}else{%>
+                        <a class="nav-link" href="/login">Login</a>
+                    <%}%>
+                </li>
+                <li class="nav-item">
+                    <% if(pagename==="Contact") {%>
+                        <a class="nav-link" style="color:greenyellow" href="/sontact">Contact</a>
+                    <%}else{%>
+                        <a class="nav-link" href="/contact">Contact</a>
+                    <%}%>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
